@@ -17,7 +17,6 @@ var firstName;                                           //declaring the variabl
 firstName = prompt("What is your first name?");          //using the declared variable to prompt user input
 alert(welcomeGreet + firstName + ".My name is Jessica"); //using the greeting variable + the users inputted name variable
 
-
 var lastName;
 lastName = prompt("What is your last name," + firstName + "?");
 alert("I like your name," + firstName + lastName + "." + "My last name is Lewis");
@@ -27,15 +26,14 @@ var myCar;
 myCar =prompt("Do you have a car? Y/n");
 console.log( "I drive a Honda Civic");
 
-
 var carYear;
 carYear = prompt("What year is your car?");
-var myCaryear;
-myCaryear = 2005;
-console.log( carYear + "isn't very old. My car is a" + myCaryear + ".");
+var mycarYear;
+mycarYear = 2005;
+console.log("Interesting! My car is a" + myCaryear + ".");
 
 
-
+/* A little info about me */
 var faveColour;
 faveColour = "grey";
 var yearofBirth;
