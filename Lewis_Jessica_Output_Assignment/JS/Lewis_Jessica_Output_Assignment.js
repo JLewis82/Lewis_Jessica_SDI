@@ -5,14 +5,14 @@ Week 1 Output Assignment
  */
 
 /*declaring basic string and boolean variables used throughout this script*/
-var welcomeGreet;            //variable to greet user
-welcomeGreet = "Welcome";    //variable states welcome to the user
-var goodBye;                 // declaring a variable for goodbye
+var welcomeGreet;                                //variable to greet user
+welcomeGreet = "Welcome";                        //variable states welcome to the user
+var goodBye;                                     // declaring a variable for goodbye
 goodBye = "Thank you for your input. Goodbye!"; // string for a departure greeting
-var y;                       //variable for true boolean or yes
-y = true;                    //true boolean
-var n;                       //variable for false or no boolean
-n = false;                   //false boolean
+var y;                                          //variable for true boolean or yes
+y = true;                                       //true boolean
+var n;                                          //variable for false or no boolean
+n = false;                                      //false boolean
 
 /*getting to know the user*/
 var firstName;                                           //declaring the variable
