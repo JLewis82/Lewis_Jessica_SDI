@@ -28,9 +28,10 @@ alert("I like your name" + "," + firstName + lastName + "." + "My last name is L
 
 /* asking the user random questions */
 var myChild;                                                  //declaring the variable for the users child(ren)
-myChild =prompt("Do you have a child or children? Enter y/n");// prompting the user to input if they have children or not
-alert( "Thank you" + "" + firstName + ". I have a 7yr old daughter.");              //telling the user that I have a child
-
+myChild = prompt("Do you have a child or children? Enter y/n");// prompting the user to input if they have children or not
+if (myChild = y) {
+    alert("Thank you" + "" + firstName + ". I have a 7yr old daughter.");//telling the user that I have a child
+}
 var carYear;                                         //declaring variable for the users vehicle
 carYear = prompt("What is the year of your vehicle");//prompting the user to input the year of their car
 var myCar;                                           // declaring the variable for my own car
