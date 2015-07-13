@@ -5,7 +5,16 @@ Expressions Assignment
 
 /* magic trick 1 */
 
+//greeting
+var welCome;
+welCome= alert("Welcome to my magic scripts! Errr, I mean magic TRICKS! " +
+    "Today, I will be teaching you some simple math magic to WOW you! Lets begin!");
+var yourName;
+yourName = prompt("First, tell me your name so I know how to address you.");
+alert("Thank you," + "" + yourName + ".");
+
 //step 1 user enters a number
+var magicOne;
 var a;
 a = prompt("please enter a number");
 
