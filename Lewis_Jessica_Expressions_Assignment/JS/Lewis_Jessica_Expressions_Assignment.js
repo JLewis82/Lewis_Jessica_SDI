@@ -5,16 +5,33 @@ Expressions Assignment
 
 /* magic trick 1 */
 
-//greeting
+//basic variables
+var y;
+y = true;
+var n;
+n = false;
 var welCome;
-welCome= alert("Welcome to my magic scripts! Errr, I mean magic TRICKS! " +
-    "Today, I will be teaching you some simple math magic to WOW you! Lets begin!");
+welCome = alert("Welcome to my magic scripts! Errr, I mean magic TRICKS!");
+
+//ask user to input name
 var yourName;
 yourName = prompt("First, tell me your name so I know how to address you.");
 alert("Thank you," + "" + yourName + ".");
 
-//step 1 user enters a number
+//ask user if they would like to learn magic trick 1
 var magicOne;
+magicOne = prompt("Today, I will be teaching you some simple math magic to WOW you! " +
+    "Would you like to continue with our first trick" + "" + yourName + "? y/n");
+if(magicOne = y)
+{
+    alert("ok then lets begin...");
+}
+else(magicOne = n);
+{
+    alert("sorry but this is not an option today!")
+}
+
+//step 1 user enters a number
 var a;
 a = prompt("please enter a number");
 
