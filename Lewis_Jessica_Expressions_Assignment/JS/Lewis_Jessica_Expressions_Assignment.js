@@ -1,6 +1,7 @@
 /* Miss_Jessica_Lynne Lewis
 SDI MDV2330-O
 Expressions Assignment
+7/15/2015
  */
 
 /* basic variables */
@@ -9,7 +10,7 @@ y = true;
 var n;
 n = false;
 var welCome;
-welCome = alert("Welcome to my magic scripts! Errr, I mean magic TRICKS!");
+welCome = alert("Welcome to my magic script! Errr, I mean magic TRICK!");
 
 /* ask user to input name */
 var yourName;
@@ -23,7 +24,7 @@ if(magic = y)
 {
     alert("ok then lets begin...");
 }
-else(magic = n);
+else
 {
     prompt("sorry but this is not an option today! please kindly click ok")
 }
@@ -36,7 +37,7 @@ explainOne = alert("This particular magic trick will return the number 5 for any
 
 /* step 1 user enters a number */
 var a;
-a = prompt("So here is where you please enter a number. It can be any number of your liking but beware! " +
+a = prompt("So here is where you enter a number. It can be any number of your liking but beware! " +
     "You will be using this number to do some math so choose something you can calculate easily.");
 
 /* step 2 prompt user to double their number */
@@ -74,7 +75,7 @@ if (confirmMe = y)
 {
     alert("Thank you!!")
 }
-else (confirmMe = n);
+else
 {
     alert("Please contact your system admin.")
 }
@@ -84,37 +85,41 @@ else (confirmMe = n);
 var teachTrick;
 teachTrick = prompt("Would you like to learn this magic trick? Press ok to continue...");
 
+var aInfo;
+aInfo = alert("So from this point on we will be reviewing the following information using this browsers console to make it easier to follow along.");
+var aTeach;
+aTeach = console.log("Please enter a number. Any number.");
+
 /* step 2 double the user number */
 var bTeach;
 bTeach =  2;
-alert("Thank you for entering your number. Now we will take your number and double it.(" + "" + a + "" + "x 2" + "). Press ok to continue...");
+console.log("Thank you for entering your number. Now we will take your number and double it.(" + "" + aTeach + "" + "x 2" + "). Press ok to continue...");
 var bTeachtotal;
 bTeachtotal = (a * b);
-alert("So this answer is" + "" + bTeachtotal);
+console.log("So this answer is" + ":" + "" + bTeachtotal);
 
 //step 3 is add 10 to bTotal
 var cTeach;
 cTeach = 10;
-alert("Now we will take" + "" + bTotal + "" + "and add 10 to it like this: (" + "" + bTeachtotal + "" + "+ 10" + "). Press ok to continue...");
+console.log("Now we will take" + "" + bTotal + "" + "and add 10 to it like this: (" + "" + bTeachtotal + "" + "+ 10" + "). Press ok to continue...");
 var cTeachtotal;
 cTeachtotal = (bTotal + c);
-alert("So this answer is" + "" + cTeachtotal);
+console.log("So this answer is" + "" + cTeachtotal);
 
 //step 4 is halving cTotal so divide by two
 var dTeach;
 dTeach = 2;
-alert("Now we will take" + "" + cTeachtotal + "" + "and divide it in half: (" + "" + cTeachtotal + "" + "/ 2" + "). Press ok to continue...");
+console.log("Now we will take" + "" + cTeachtotal + "" + "and divide it in half: (" + "" + cTeachtotal + "" + "/ 2" + "). Press ok to continue...");
 var dTeachtotal;
 dTeachtotal = (cTeachtotal / 2);
-alert("So this answer is" + "" + dTeachtotal);
+console.log("So this answer is" + "" + dTeachtotal);
 
 
 /* step five is Take away you original number. */
-
-alert("Now we will take" + "" + dTeachtotal + "" + "and subrtract your original number: (" + "" + dTeachtotal + "" + "-" + a + "). Press ok to continue...");
+console.log("Now we will take" + "" + dTeachtotal + "" + "and subrtract your original number: (" + "" + dTeachtotal + "" + "-" + a + "). Press ok to continue...");
 var eTeachtotal;
 eTeachtotal = (dTotal - a);
-alert("The result is" + "" + eTeachtotal);
+console.log("The result is" + "" + eTeachtotal);
 
 /* confirmation that the end result equals the number 5 */
 var confirmTeach;
@@ -124,7 +129,7 @@ if (confirmTeach = y)
     alert("Thank you! This concludes today's math magic trick. If you would like to review this trick again with " +
         "a different chosen number then please refresh this page. Goodbye")
 }
-else (confirmTeach = n);
+else 
 {
     alert("Please contact your system admin.")
 }
