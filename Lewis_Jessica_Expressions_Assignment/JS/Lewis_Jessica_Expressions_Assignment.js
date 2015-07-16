@@ -32,17 +32,17 @@ else
 /* explanation of the trick */
 var explainOne; //declaring a variable
 explainOne = alert("This particular magic trick will return the number 5 for any given number you will choose." +
-    " Regardless of your chosen magic number the number 5 will ALWAYS be the end result of this funky math magic trick.") ; //explaining the math magic trick to the user
+    " Regardless of your chosen magic number the number 5 will ALWAYS be the end result of this funky math magic trick.") ; //explaining the math magic trick to the use
 
 
 /* step 1 user enters a number */
-var a;
+var a; //declaring a variable
 a = prompt("So here is where you enter a number. It can be any number of your liking but beware! " +
-    "You will be using this number to do some math so choose something you can calculate easily.");
+    "You will be using this number to do some math so choose something you can calculate easily."); //asking the user to input a number 
 
 /* step 2 prompt user to double their number */
-var b;
-b =  2;
+var b; //declaring a variable
+b =  2;// assigning the number 2
 alert("Thank you. Now double your number. Press ok to continue...");
 var bTotal;
 bTotal= (a * b);
