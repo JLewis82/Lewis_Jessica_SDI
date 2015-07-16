@@ -74,15 +74,16 @@ dTotal = (cTotal / 2);                                                        //
 
 /* step five is prompt user to Take away their original number. */
 
-alert("Thank you. Now take this numer and subrtract your original number. Press ok to continue...");
-var eTotal;
-eTotal = (dTotal - a);
-alert("The result is" + "" + eTotal);
+alert("Thank you. Now take this number and " +
+    "subtract your original number. Press ok to continue..."); // alerting the user to subtract their original number fro the previous total
+var eTotal;                                                    // declaring a variable
+eTotal = (dTotal - a);                                         // subtracting the users original number from the previous total
+alert("The result is" + "" + eTotal);                          // telling the user the result
 
 /* confirmation that the end result equals the number 5 */
-var confirmMe;
-confirmMe = confirm("Does" + "" + eTotal + "" + " = 5? y/n" );
-if (confirmMe = y)
+var confirmMe;                                                 // declaring a variable
+confirmMe = confirm("Does" + "" + eTotal + "" + " = 5? y/n" ); // assigning confirm to the variable to verify that the end result is 5
+if (confirmMe = y)                                             // an if/ else statement
 {
     alert("Thank you!!")
 }
