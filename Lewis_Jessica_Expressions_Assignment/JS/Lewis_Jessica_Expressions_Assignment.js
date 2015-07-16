@@ -43,9 +43,9 @@ a = prompt("So here is where you enter a number. It can be any number of your li
 /* step 2 prompt user to double their number */
 var b; //declaring a variable
 b =  2;// assigning the number 2
-alert("Thank you. Now double your number. Press ok to continue...");
-var bTotal;
-bTotal= (a * b);
+alert("Thank you. Now double your number. Press ok to continue...");//asking user to double the number
+var bTotal;//declaring a variable
+bTotal= (a * b);// taking the variable a and multiplying it by 2
 
 /* step 3 prompt user to add 10 to the previous number */
 var c;
@@ -129,7 +129,7 @@ if (confirmTeach = y)
     alert("Thank you! This concludes today's math magic trick. If you would like to review this trick again with " +
         "a different chosen number then please refresh this page. Goodbye")
 }
-else 
+else
 {
     alert("Please contact your system admin.")
 }
