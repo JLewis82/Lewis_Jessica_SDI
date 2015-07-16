@@ -94,13 +94,15 @@ else
 
 
 /* teach the trick */
-var teachTrick;
-teachTrick = prompt("Would you like to learn this magic trick? Press ok to continue...");
+var teachTrick; //declaring a variable
+teachTrick = prompt("Would you like to learn this magic trick? Press ok to continue..."); //prompting the user to press ok to learn the trick
 
-var aInfo;
-aInfo = alert("So from this point on we will be reviewing the following information using this browsers console to make it easier to follow along.");
-var aTeach;
-aTeach = console.log("Please enter a number. Any number.");
+ /* introducing the user to the magic trick */
+var aInfo; //declaring a variable
+aInfo = alert("So from this point on we will be reviewing the following" +
+    " information using this browsers console to make it easier to follow along."); //alerting the user that they will need to follow along using the browser console
+var aTeach; //declaring a variable
+aTeach = console.log("Please enter a number. Any number."); // asking the user to enter a number
 
 /* step 2 double the user number */
 var bTeach;
