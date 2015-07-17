@@ -98,54 +98,60 @@ var teachTrick; //declaring a variable
 teachTrick = prompt("Would you like to learn this magic trick? Press ok to continue..."); //prompting the user to press ok to learn the trick
 
  /* introducing the user to the magic trick */
-var aInfo; //declaring a variable
+var aInfo;                                                                          //declaring a variable
 aInfo = alert("So from this point on we will be reviewing the following" +
     " information using this browsers console to make it easier to follow along."); //alerting the user that they will need to follow along using the browser console
-var aTeach; //declaring a variable
-aTeach = console.log("Please enter a number. Any number."); // asking the user to enter a number
+var aTeach;                                                                         //declaring a variable
+aTeach = console.log("Please enter a number. Any number.");                        // asking the user to enter a number
 
 /* step 2 double the user number */
-var bTeach;
-bTeach =  2;
-console.log("Thank you for entering your number. Now we will take your number and double it.(" + "" + aTeach + "" + "x 2" + "). Press ok to continue...");
-var bTeachtotal;
-bTeachtotal = (a * b);
-console.log("So this answer is" + ":" + "" + bTeachtotal);
+var bTeach;                                                                                         //declaring a variable
+bTeach =  2;                                                                                        //assigning the number 2 to the variable
+console.log("Thank you for entering your number. Now we will" +
+    " take your number and double it.(" + "" + aTeach + "" + "x 2" + "). Press ok to continue..."); //thanking the user for their input
+var bTeachtotal;                                                                                    //declaring a variable
+bTeachtotal = (a * b);                                                                              //assigning a times b to the variable
+console.log("So this answer is" + ":" + "" + bTeachtotal);                                          //using the console to output the total
 
-//step 3 is add 10 to bTotal
-var cTeach;
-cTeach = 10;
-console.log("Now we will take" + "" + bTotal + "" + "and add 10 to it like this: (" + "" + bTeachtotal + "" + "+ 10" + "). Press ok to continue...");
-var cTeachtotal;
-cTeachtotal = (bTotal + c);
-console.log("So this answer is" + "" + cTeachtotal);
+/*step 3 is add 10 to bTotal*/
+var cTeach;                                                                           //declaring a variable
+cTeach = 10;                                                                          //assigning the number 10 to the variable
+console.log("Now we will take" + "" + bTotal + "" + "and add 10 to it" +
+    " like this: (" + "" + bTeachtotal + "" + "+ 10" + "). Press ok to continue..."); //showing the user the 3rd step of the trick via the console
+var cTeachtotal;                                                                      //declaring a variable
+cTeachtotal = (bTotal + cTeach);                                                      //adding the total from step 2 plus 10
+console.log("So this answer is" + "" + cTeachtotal);                                  //telling the user the total for step 3
 
-//step 4 is halving cTotal so divide by two
-var dTeach;
-dTeach = 2;
-console.log("Now we will take" + "" + cTeachtotal + "" + "and divide it in half: (" + "" + cTeachtotal + "" + "/ 2" + "). Press ok to continue...");
-var dTeachtotal;
-dTeachtotal = (cTeachtotal / 2);
-console.log("So this answer is" + "" + dTeachtotal);
+/*step 4 is halving cTotal so divide by two */
+var dTeach;                                                                          //declaring a variable
+dTeach = 2;                                                                          //assinging the number 2 to the variable
+console.log("Now we will take" + "" + cTeachtotal + "" + "and divide " +
+    "it in half: (" + "" + cTeachtotal + "" + "/ 2" + "). Press ok to continue..."); //showing the user via the console how to do this step of the magic trick
+var dTeachtotal; //declaring a variable
+dTeachtotal = (cTeachtotal / 2);                                                     //dividing the previous total in step 4 by 2
+console.log("So this answer is" + "" + dTeachtotal);                                 //outputting the answer for this step for the user via the console
 
 
 /* step five is Take away you original number. */
-console.log("Now we will take" + "" + dTeachtotal + "" + "and subrtract your original number: (" + "" + dTeachtotal + "" + "-" + a + "). Press ok to continue...");
-var eTeachtotal;
-eTeachtotal = (dTotal - a);
-console.log("The result is" + "" + eTeachtotal);
+console.log("Now we will take" + "" + dTeachtotal + "" + "and " +
+    "subrtract your original number: (" + "" + dTeachtotal + "" + "-" + a + "). " +
+    "Press ok to continue...");                   //telling the user via the console the next step to the trick
+
+var eTeachtotal;                                  //declaring a variable
+eTeachtotal = (dTotal - aTeach);                  //assigning the previous total in step 4 minus the users original secret number input
+console.log("The result is" + "" + eTeachtotal); //telling the user via the console the end result
 
 /* confirmation that the end result equals the number 5 */
-var confirmTeach;
-confirmTeach = confirm("Does" + "" + eTeachtotal + "" + " = 5? y/n" );
-if (confirmTeach = y)
+var confirmTeach;                                                            //declaring a variable
+confirmTeach = confirm("Does" + "" + eTeachtotal + "" + " = 5? y/n" );       //asking the user to confirm that the end result does in fact equal the number 5 to make sure the magic trick actually worked
+if (confirmTeach = y)                                                        // an if/else statement
 {
     alert("Thank you! This concludes today's math magic trick. If you would like to review this trick again with " +
-        "a different chosen number then please refresh this page. Goodbye")
+        "a different chosen number then please refresh this page. Goodbye"); //if user answered yes then they are told goodbye
 }
 else
 {
-    alert("Please contact your system admin.")
+    alert("Please contact your system admin.");                              // if the user responded other than true then they are informed to contact their system admin
 }
 
 
