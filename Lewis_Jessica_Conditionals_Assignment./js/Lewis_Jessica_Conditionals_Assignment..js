@@ -33,7 +33,7 @@ else
 
 
 var theTemp;
-theTemp = prompt("Please enter the current temperature in numeric form...");
+theTemp = prompt(yourName + "," + "Please enter the current temperature in numeric form...");
 
 
 if (theTemp <= 30)
