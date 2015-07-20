@@ -73,8 +73,9 @@ if (theTemp != y)
 /* declaring variables for colours and assigning their psychological meaning to them */
 var orange;
 orange = alert();
+
 var purple;
-purple = ("Purple is the color of the imagination. It can be creative and individual or immature and impractical.");
+purple = alert("Purple is the color of the imagination. It can be creative and individual or immature and impractical.");
 
 var green;
 green = alert("Green is the color of balance and growth. It can mean both self-reliance as a positive and possessiveness as a negative, among many other meanings. ");
@@ -106,8 +107,38 @@ var faveColour;
 faveColour = prompt("Now lets see what you will wear today by you entering your favourite colour! But...." +
     "please only enter one of the folowing colours: orange, purple, green, blue, red, white, black, gray, or yellow and press enter." + "" + yourName + "."  +
     "so we can make this decision quite quickly bc we cant have you being late for work today! ");
-
-
+if(faveColour = orange)
+{
+    alert(orange);
+}
+if(faveColour = purple)
+{
+    alert(purple);
+}
+if(faveColour = brown)
+{
+    alert(brown);
+}
+if(faveColour = blue)
+{
+    alert(blue);
+}
+if(faveColour = green)
+{
+    alert(green);
+}
+if(faveColour = yellow)
+{
+    alert(yellow);
+}
+if(faveColour = white)
+{
+    alert(white);
+}
+if(faveColour = black)
+{
+    alert(black);
+}
 
 /* goodbye */
 
