@@ -70,26 +70,49 @@ if (theTemp != y)
 
 /* declaring variables for colours and assigning their psychological meaning to them */
 var orange;
+orange = ("really? orange?!");
+
 var green;
+green = ("Green is the color of balance and growth. It can mean both self-reliance as a positive and possessiveness as a negative, among many other meanings. ");
+
 var brown;
+brown = ("The color brown is a friendly yet serious, down-to-earth color that relates to security, protection, comfort and material wealth. ");
+
 var purple;
 purple = ("Purple is the color of the imagination. It can be creative and individual or immature and impractical.");
+
 var black;
+black = ("Black is the color of the hidden, the secretive and the unknown," +
+" creating an air of mystery. It keeps things bottled up inside, hidden from the world. ");
+
 var gray;
+gray = ("From a color psychology perspective, gray is the color of compromise - " + "\n" +
+"being neither black nor white, it is the transition between two non-colors. It is unemotional and detached and can be indecisive.");
+
 var white;
+white = ("White is color at its most complete and pure, the color of perfection. The color meaning of white is purity, innocence, wholeness and completion. ");
+
 var yellow;
+yellow = ("yellow is the color of the mind and the intellect. It is optimistic and cheerful. However it can also suggest impatience, criticism and cowardice.");
+
 var red;
+red = ("Red is the color of energy, passion, action, ambition and determination. It is also the color of anger and sexual passion.");
+
 var blue;
+blue = ("Blue is the color of trust and peace. It can suggest loyalty and integrity as well as conservatism and frigidity.  ");
 
 
 /* having user enter fave colour */
 var faveColour;
-faveColour = prompt("Now lets see what you will wear today by you entering your favourite colour! But...." +
-    "please only enter one of the folowing colours: orange, purple, green, blue, red, white, black, gray, or yellow and press enter." + "" + yourName + "."  +
-    "so we can make this decision quite quickly bc we cant have you being late for work today! ");
+faveColour = prompt("Now lets see what you will wear today by you entering your favourite colour! But...." + "\n" +
+    "please only enter one of the folowing colours: orange, purple, green, blue, red, white, black, gray, or yellow " +
+    "and press enter" + "," + "\n" + "" + yourName + "."  + "\n" +
+    "so we can make this decision quite quickly." + "\n" + "" + "We cant have you being late for work today! ");
+
+/* variables and assigning strings for optional colours */
 if(faveColour === "orange")
 {
-    alert("");
+    alert(orange);
 }
 else if(faveColour === "purple")
 {
@@ -97,44 +120,43 @@ else if(faveColour === "purple")
 }
 else if(faveColour === "red")
 {
-    alert("Red is the color of energy, passion, action, ambition and determination. It is also the color of anger and sexual passion.");
+    alert(red);
 }
 else if(faveColour === "brown")
 {
-    alert("The color brown is a friendly yet serious, down-to-earth color that relates to security, protection, comfort and material wealth. ")
+    alert(brown);
 }
 if(faveColour === "blue")
 {
-    alert("Blue is the color of trust and peace. It can suggest loyalty and integrity as well as conservatism and frigidity.  ")
+    alert(blue);
 }
  else if(faveColour === "green")
 {
-    alert("Green is the color of balance and growth. It can mean both self-reliance as a positive and possessiveness as a negative, among many other meanings. ")
+    alert(green);
 }
 else if(faveColour === "yellow")
 {
-    alert ("yellow is the color of the mind and the intellect. It is optimistic and cheerful. However it can also suggest impatience, criticism and cowardice.")
+    alert (yellow);
 }
 else if(faveColour === "white")
 {
-    alert("White is color at its most complete and pure, the color of perfection. The color meaning of white is purity, innocence, wholeness and completion. ")
+    alert(white);
 }
 else if(faveColour === "black")
 {
-    alert("Black is the color of the hidden, the secretive and the unknown," +
-        " creating an air of mystery. It keeps things bottled up inside, hidden from the world. ")
+    alert(black);
 }
 else if(faveColour === "gray")
 {
-    alert("From a color psychology perspective, gray is the color of compromise - " + "\n" +
-        "being neither black nor white, it is the transition between two non-colors. It is unemotional and detached and can be indecisive.");
+    alert(gray);
 }
 else
 {
-    alert("Please choose from the optional colours: red, blue, orange, green, yellow, brown, black, gray, or white.");
+    alert("Please choose from the optional colours: red, blue, orange, green, purple, yellow, brown," +
+        " black, gray, or white," + "" + yourName + "" + "\n" + "Otherwise this script will not work. Thank you!");
 }
 
 
 /* goodbye */
 var theEnd;
-theEnd = alert("Thank you for participating today," + "" + yourName + "" + goodBye + ".");
+theEnd = alert("Thank you for participating today" + "," + "" + yourName + "" + goodBye + ".");
