@@ -13,85 +13,83 @@ welCome = alert("Welcome to todays weather! We will review your " +
 /* asking user for their name and location */
 var yourName;                                                                       //declaring a variable
 yourName = prompt("Please enter your name so I know how to properly address you."); // asking the user to input their name
-alert(" Thank you very much" + "," + yourName + ".");
+alert(" Thank you very much" + "," + yourName + ".");                               // thanking the user for their input using a popup
 
 /* the weather using if/else */
-var theWeather; //declaring a variable
-theWeather = prompt(yourName + "," + "" + "Is it raining outside? y/n");
-if (theWeather == y)
+var theWeather;                                                          //declaring a variable
+theWeather = prompt(yourName + "," + "" + "Is it raining outside? y/n"); //assigning a prompt with a string asking the user the current weather
+if (theWeather == yes)                                                  // using if/else to alert the user depending on their response to the type of weather
 {
-    alert("Don't forget your umbrella!");
+    alert("Don't forget your umbrella!");                               // if user responds with a yes use this alert
 }
-else
+else                                                                   // if user responds with anything else besides yes alert them this
 {
     alert("Don't forget your sunglasses!");
 }
 
-
 /* temperature using if with && */
+var theTemp;                                                                                     //declaring a variable
+theTemp = prompt(yourName + "," + "Please enter the current temperature in numeric form...");    //assigning a prompt for the user to enter their current outside temp
 
-
-var theTemp; //declaring a variable
-theTemp = prompt(yourName + "," + "Please enter the current temperature in numeric form...");
-
-
-if (theTemp <= 30)
+if (theTemp <= 40)                                                                              //if the temp is equal or less than 40 degrees
 {
-    console.log("Wow! Seems to be a bit past cold for this time of year! Dont forget your sweater!");
+    console.log("Wow! Seems to be a bit past cold for this time of year! Dont forget your turtleneck!");
 }
-
-if ((theTemp > 30) && (theTemperature <= 55))
+if ((theTemp > 40) && (theTemperature <= 60))                                                   //if the temp is greater than 40 but equal or less than 60 then alert this
 {
-    console.log("Seemes like today is a fairly nice and cool day");
+    console.log("Seems like today is a cool day. Might want to grab your jacket!");
 }
-
-if ((theTemp > 55) && (theTemperature <= 75))
+if ((theTemp > 60) && (theTemperature <= 80))                                                  //if the temp is greater 60 but equal to or less than 80 then alert this
 {
-    console.log = ("It is a nice and fairly warm day. Lets not forget your sunglasses!");
+    console.log = ("Ah! It is a warm day! Lets not forget your sunglasses!");
 }
-
-if ((theTemp > 75))
+if ((theTemp > 80))                                                                            //if the temp is greater than 80 then alert this
 {
-    console.log("Wow! It is very hot today! Lets try to loiter around the AC at work today!");
+    console.log("Sounds like its hot outside! Lets try to loiter around the AC at work today!");
 }
-
-
-
 
 /* using "if" with "else if" to ask the user their fave colour */
-
 //declaring variables for colours and assigning their psychological meaning to them
+
 var orange; //declaring a variable
-orange = ("really? orange?!");
+orange = ("really? orange?!"); // assigning a string to the variable
 
 var green; //declaring a variable
-green = ("Green is the color of balance and growth. It can mean both self-reliance as a positive and possessiveness as a negative, among many other meanings. ");
+green = ("Green is the color of balance and growth. It can mean both self-reliance " +
+"as a positive and possessiveness as a negative, among many other meanings. ");// assigning a string to the variable
 
 var brown; //declaring a variable
-brown = ("The color brown is a friendly yet serious, down-to-earth color that relates to security, protection, comfort and material wealth. ");
+brown = ("The color brown is a friendly yet serious, down-to-earth color " +
+"" + "that relates to security, protection, comfort and material wealth. "); // assigning a string to the variable
 
 var purple; //declaring a variable
-purple = ("Purple is the color of the imagination. It can be creative and individual or immature and impractical.");
+purple = ("Purple is the color of the imagination. It can be creative and " +
+"individual or immature and impractical."); // assigning a string to the variable
 
 var black; //declaring a variable
 black = ("Black is the color of the hidden, the secretive and the unknown," +
-" creating an air of mystery. It keeps things bottled up inside, hidden from the world. ");
+" creating an air of mystery. It keeps things bottled up inside, hidden from the world. "); // assigning a string to the variable
 
 var gray; //declaring a variable
 gray = ("From a color psychology perspective, gray is the color of compromise - " + "\n" +
-"being neither black nor white, it is the transition between two non-colors. It is unemotional and detached and can be indecisive.");
+"being neither black nor white, it is the transition between two non-colors. " +
+"It is unemotional and detached and can be indecisive."); // assigning a string to the variable
 
 var white; //declaring a variable
-white = ("White is color at its most complete and pure, the color of perfection. The color meaning of white is purity, innocence, wholeness and completion. ");
+white = ("White is color at its most complete and pure, the color of perfection." +
+" The color meaning of white is purity, innocence, wholeness and completion. "); // assigning a string to the variable
 
 var yellow; //declaring a variable
-yellow = ("yellow is the color of the mind and the intellect. It is optimistic and cheerful. However it can also suggest impatience, criticism and cowardice.");
+yellow = ("yellow is the color of the mind and the intellect. It is optimistic and cheerful. " +
+"However it can also suggest impatience, criticism and cowardice."); // assigning a string to the variable
 
 var red; //declaring a variable
-red = ("Red is the color of energy, passion, action, ambition and determination. It is also the color of anger and sexual passion.");
+red = ("Red is the color of energy, passion, action, ambition and determination. " +
+"It is also the color of anger and sexual passion."); // assigning a string to the variable
 
 var blue; //declaring a variable
-blue = ("Blue is the color of trust and peace. It can suggest loyalty and integrity as well as conservatism and frigidity.  ");
+blue = ("Blue is the color of trust and peace. It can suggest loyalty and " +
+"integrity as well as conservatism and frigidity.  "); // assigning a string to the variable
 
 
 /* having user enter fave colour */
@@ -101,7 +99,7 @@ faveColour = prompt("Now lets see what you will wear today by you entering your 
     "and press enter" + "," + "\n" + "" + yourName + "."  + "\n" +
     "so we can make this decision quite quickly." + "\n" + "" + "We cant have you being late for work today! ");
 
-/* variables and assigning strings for optional colours */
+/* variables and assigning strings for optional colours while using else/if */
 if(faveColour === "orange")
 {
     alert(orange);
