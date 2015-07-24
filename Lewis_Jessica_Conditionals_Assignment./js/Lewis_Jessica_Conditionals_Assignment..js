@@ -1,5 +1,7 @@
 /**
  * Created by Miss_Jessica_Lynne on 7/17/15.
+ * SDI MDV2330-O
+ * Conditionals Assignment
  */
 /* basic variables */
 var yes;                                                            //declaring a variable
