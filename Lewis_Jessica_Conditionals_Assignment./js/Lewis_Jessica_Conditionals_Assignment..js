@@ -51,108 +51,113 @@ if ((theTemp > 80))                                                             
 /* using "if" with "else if" to ask the user their fave colour */
 //declaring variables for colours and assigning their psychological meaning to them
 
-var orange; //declaring a variable
-orange = ("really? orange?!"); // assigning a string to the variable
+var orange;                                                                                  //declaring a variable
+orange = ("really? orange?!");                                                               // assigning a string to the variable
 
-var green; //declaring a variable
+var green;                                                                                   //declaring a variable
 green = ("Green is the color of balance and growth. It can mean both self-reliance " +
-"as a positive and possessiveness as a negative, among many other meanings. ");// assigning a string to the variable
+"as a positive and possessiveness as a negative, among many other meanings. ");              // assigning a string to the variable
 
-var brown; //declaring a variable
+var brown;                                                                                  //declaring a variable
 brown = ("The color brown is a friendly yet serious, down-to-earth color " +
-"" + "that relates to security, protection, comfort and material wealth. "); // assigning a string to the variable
+"" + "that relates to security, protection, comfort and material wealth. ");                 // assigning a string to the variable
 
-var purple; //declaring a variable
+var purple;                                                                                 //declaring a variable
 purple = ("Purple is the color of the imagination. It can be creative and " +
-"individual or immature and impractical."); // assigning a string to the variable
+"individual or immature and impractical.");                                                 // assigning a string to the variable
 
-var black; //declaring a variable
+var black;                                                                                  //declaring a variable
 black = ("Black is the color of the hidden, the secretive and the unknown," +
 " creating an air of mystery. It keeps things bottled up inside, hidden from the world. "); // assigning a string to the variable
 
-var gray; //declaring a variable
+var gray;                                                                                   //declaring a variable
 gray = ("From a color psychology perspective, gray is the color of compromise - " + "\n" +
 "being neither black nor white, it is the transition between two non-colors. " +
-"It is unemotional and detached and can be indecisive."); // assigning a string to the variable
+"It is unemotional and detached and can be indecisive.");                                  // assigning a string to the variable
 
-var white; //declaring a variable
+var white;                                                                                 //declaring a variable
 white = ("White is color at its most complete and pure, the color of perfection." +
-" The color meaning of white is purity, innocence, wholeness and completion. "); // assigning a string to the variable
+" The color meaning of white is purity, innocence, wholeness and completion. ");          // assigning a string to the variable
 
-var yellow; //declaring a variable
+var yellow;                                                                               //declaring a variable
 yellow = ("yellow is the color of the mind and the intellect. It is optimistic and cheerful. " +
-"However it can also suggest impatience, criticism and cowardice."); // assigning a string to the variable
+"However it can also suggest impatience, criticism and cowardice.");                      // assigning a string to the variable
 
-var red; //declaring a variable
+var red;                                                                                  //declaring a variable
 red = ("Red is the color of energy, passion, action, ambition and determination. " +
-"It is also the color of anger and sexual passion."); // assigning a string to the variable
+"It is also the color of anger and sexual passion.");                                    // assigning a string to the variable
 
-var blue; //declaring a variable
+var blue;                                                                                //declaring a variable
 blue = ("Blue is the color of trust and peace. It can suggest loyalty and " +
-"integrity as well as conservatism and frigidity.  "); // assigning a string to the variable
+"integrity as well as conservatism and frigidity.  ");                                  // assigning a string to the variable
 
 
 /* having user enter fave colour */
-var faveColour; //declaring a variable
-faveColour = prompt("Now lets see what you will wear today by you entering your favourite colour! But...." + "\n" +
+var faveColour;                                                                          //declaring a variable
+faveColour = prompt("Now lets see what you will wear today by you entering your" +
+    " favourite colour! But...." + "\n" +
     "please only enter one of the folowing colours: orange, purple, green, blue, red, white, black, gray, or yellow " +
     "and press enter" + "," + "\n" + "" + yourName + "."  + "\n" +
-    "so we can make this decision quite quickly." + "\n" + "" + "We cant have you being late for work today! ");
+    "so we can make this decision quite quickly." + "\n" + ""
+    + "We cant have you being late for work today! ");                                // assigning a string to the variable
+
 
 /* variables and assigning strings for optional colours while using else/if */
-if(faveColour === "orange")
+if(faveColour === "orange")        // if fave colour is orange then do this
 {
     alert(orange);
 }
-else if(faveColour === "purple")
+else if(faveColour === "purple")   // if fave purple is orange then do this
 {
      alert(purple);
 }
-else if(faveColour === "red")
+else if(faveColour === "red")     // if fave colour is red then do this
 {
     alert(red);
 }
-else if(faveColour === "brown")
+else if(faveColour === "brown")   // if fave colour is brown then do this
 {
     alert(brown);
 }
-if(faveColour === "blue")
+if(faveColour === "blue")         // if fave colour is blue then do this
 {
     alert(blue);
 }
- else if(faveColour === "green")
+ else if(faveColour === "green") // if fave colour is green then do this
 {
     alert(green);
 }
-else if(faveColour === "yellow")
+else if(faveColour === "yellow") // if fave colour is yellow then do this
 {
     alert (yellow);
 }
-else if(faveColour === "white")
+else if(faveColour === "white") // if fave colour is white then do this
 {
     alert(white);
 }
-else if(faveColour === "black")
+else if(faveColour === "black") // if fave colour is black then do this
 {
     alert(black);
 }
-else if(faveColour === "gray")
+else if(faveColour === "gray") // if fave colour is gray then do this
 {
     alert(gray);
 }
-else
+else if(faveColour === "")    // if fave colour is left blank then do this
 {
     alert("Please choose from the optional colours: red, blue, orange, green, purple, yellow, brown," +
-        " black, gray, or white," + "" + yourName + "" + "\n" + "Otherwise this script will not work. Thank you!");
+        " black, gray, or white," + "" + yourName + "" + "\n" +
+        "Otherwise this script will not work. Thank you!");
 }
 
 /* The weather confirm using ternary conditional if/else */
-var letsConfirm; //declaring a variable
-letsConfirm = confirm(" ok so it is definitely" + "" + theTemp + "" + "outside right now? y/n");
+var letsConfirm;                                                    //declaring a variable
+letsConfirm = confirm(" ok so it is definitely" + "" + theTemp + ""
+    + "outside right now? y/n");                                   // assigning a confirm prompt
 
-if (theTemp != yes)
+if (theTemp != yes)                                                //using ternaru if to respond to users input using concatenated string
 {
-    console.log("It is " + (theTemp >= 90 ? "HOT!" : (theTemperature > 50 ? "NICE!" : "COLD!")))
+    console.log("It is " + (theTemp >= 80 ? "HOT!" : (theTemp > 50 ? "NICE!" : "COLD!")))
 }
 else
 {
@@ -162,13 +167,15 @@ else
 
 
 /* confirming the correct fave colour before letting user exit site */
-var letsConfirm2; //declaring a variable
-letsConfirm2 = confirm( " Now lets confirm that" + "" + faveColour + "" + "is your fave colour? yes/no and click ok.");
-if (faveColour == yes)
+var letsConfirm2;                                  //declaring a variable
+letsConfirm2 = confirm( " Now lets confirm that" + ""
+    + faveColour + ""
+    + "is your fave colour? yes/no and click ok.");// confirming the users fave colour
+if (faveColour == yes)                            //if fave colour equals a yes from the user then do this
 {
     console.log("So your fave colour is:" + "" + faveColour + "?" + "I hope so bc I love that colour!");
 }
-else
+else                                            // otherwise do this
 {
     console.log("I think there was an error. Lets try this again");
 }
@@ -176,5 +183,6 @@ else
 
 
 /*  initiating a goodbye */
-var theEnd; //declaring a variable
-theEnd = alert("Thank you for participating today" + "," + "" + yourName + "" + goodBye + ".");
+var theEnd;                                       //declaring a variable
+theEnd = alert("Thank you for participating today"
+    + "," + "" + yourName + "" + goodBye + "."); //assigning a popup alert to say thank you and goodbye to the user
