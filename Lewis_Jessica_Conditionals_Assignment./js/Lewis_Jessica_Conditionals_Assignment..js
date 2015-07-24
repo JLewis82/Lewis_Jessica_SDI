@@ -18,11 +18,11 @@ alert(" Thank you very much" + "," + yourName + ".");                           
 /* the weather using if/else */
 var theWeather;                                                          //declaring a variable
 theWeather = prompt(yourName + "," + "" + "Is it raining outside? y/n"); //assigning a prompt with a string asking the user the current weather
-if (theWeather == yes)                                                  // using if/else to alert the user depending on their response to the type of weather
+if (theWeather === yes)                                                  // using if/else to alert the user depending on their response to the type of weather
 {
     alert("Don't forget your umbrella!");                               // if user responds with a yes use this alert
 }
-else                                                                   // if user responds with anything else besides yes alert them this
+else                                                              // if user responds with anything else besides yes alert them this
 {
     alert("Don't forget your sunglasses!");
 }
@@ -35,11 +35,11 @@ if (theTemp <= 40)                                                              
 {
     console.log("Wow! Seems to be a bit past cold for this time of year! Dont forget your turtleneck!");
 }
-if ((theTemp > 40) && (theTemperature <= 60))                                                   //if the temp is greater than 40 but equal or less than 60 then alert this
+if ((theTemp > 40) && (theTemp <= 60))                                                   //if the temp is greater than 40 but equal or less than 60 then alert this
 {
     console.log("Seems like today is a cool day. Might want to grab your jacket!");
 }
-if ((theTemp > 60) && (theTemperature <= 80))                                                  //if the temp is greater 60 but equal to or less than 80 then alert this
+if ((theTemp > 60) && (theTemp <= 80))                                                  //if the temp is greater 60 but equal to or less than 80 then alert this
 {
     console.log = ("Ah! It is a warm day! Lets not forget your sunglasses!");
 }
@@ -152,34 +152,32 @@ else if(faveColour === "")    // if fave colour is left blank then do this
 
 /* The weather confirm using ternary conditional if/else */
 var letsConfirm;                                                    //declaring a variable
-letsConfirm = confirm(" ok so it is definitely" + "" + theTemp + ""
-    + "outside right now? y/n");                                   // assigning a confirm prompt
+letsConfirm = prompt(" ok so it is definitely" + "" + "\n" + theTemp + "\n"
+    + "outside right now? yes/no");                                   // assigning a prompt
 
 if (theTemp != yes)                                                //using ternaru if to respond to users input using concatenated string
 {
-    console.log("It is " + (theTemp >= 80 ? "HOT!" : (theTemp > 50 ? "NICE!" : "COLD!")))
+    alert("It is " + (theTemp >= 80 ? "HOT outside today!" : (theTemp > 50 ? "NICE outside today!" : "COLD outside today!"))); //ternary using if, else, else
 }
 else
 {
-    console.log("I think there was an error. Lets try this again");
+    alert("I think there was an error. Lets try this again");
 }
-
 
 
 /* confirming the correct fave colour before letting user exit site */
 var letsConfirm2;                                  //declaring a variable
-letsConfirm2 = confirm( " Now lets confirm that" + ""
-    + faveColour + ""
+letsConfirm2 = prompt( " Now lets confirm that" + "," + "\n"
+    + faveColour + "\n"
     + "is your fave colour? yes/no and click ok.");// confirming the users fave colour
-if (faveColour == yes)                            //if fave colour equals a yes from the user then do this
+if (faveColour === yes)                            //if fave colour equals a yes from the user then do this
 {
-    console.log("So your fave colour is:" + "" + faveColour + "?" + "I hope so bc I love that colour!");
+    alert("So your fave colour is:" + "" + faveColour + "?" + "I hope so bc I love that colour!");
 }
 else                                            // otherwise do this
 {
-    console.log("I think there was an error. Lets try this again");
+    alert("I think there was an error. Lets try this again");
 }
-
 
 
 /*  initiating a goodbye */
