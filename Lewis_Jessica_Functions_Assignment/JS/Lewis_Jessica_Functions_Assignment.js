@@ -4,38 +4,39 @@
 
 /*basic variables*/
 
-
+var yes;
+yes = true;
+var no;
+no = false;
+var welCome;
+welCome = ("Welcome to Lucky Numbers, your hot spot for \n\n " +
+"the best random lottery and Powerball \n\n " +
+"generated numbers on the web!");
 
 
 /*greeting and asking user their name*/
-var myName = prompt("enter ur name plz:");
+var myName = prompt("Let's begin! Please enter your name so I may better assist you:");
 
-function yourName(firstname)
+//assigning the function
+function yourName(username)
 {
-    var timesClicked = 1;
-
-    while (firstname === "")
+    var nameInput = "";
+    while (username === "")
     {
-        firstname = prompt("Dont leave this blank!\n\nPlease enter your name:");
-
-        timesClicked++;
-
-        if (timesClicked === 10)
-        {
-            console.log("Enuff nomore clicking!");
-            break;
-        }
+        username = prompt("Dont leave this blank!\n\nPlease enter your name:");
+        if (nameInput = "")
+             {
+                alert("Thank you!");
+                break;
+            }
     }
-    return firstname;
+    return username;
 }
+
+//calling/invoking the above function:
 myName = yourName(myName);
-//console.log("Hello,"+myName+".welcome
-myName=yourName(myName);
+alert(welCome + myName);
 
-
-
-//functiontogeneraterandomnumburs
-    functionrandomNumGen()
 
 
 
