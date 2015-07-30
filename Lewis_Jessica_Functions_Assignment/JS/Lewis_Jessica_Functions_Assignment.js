@@ -9,18 +9,17 @@ yes = true;
 var no;
 no = false;
 
-
 /* VARIABLE FOR WELCOME AND GREETING*/
 var welCome;
-welCome = ("Welcome to Lucky Numbers, your hot spot for \n\n " +
-"the best random lottery and Powerball \n\n " +
-"generated numbers on the web!");
+        welCome = ("Welcome to Lucky Numbers, your hot spot for \n\n " +
+                                "the best random lottery and Powerball \n\n " +
+                                "generated numbers on the web!");
 
 
 /* USING A FUNCTION ASKING THE USER TO INPUT THEIR NAME*/
+
 var myName;
     myName = prompt("Let's begin! Please enter your name so I may better assist you:");
-
 //assigning the function to request that the user input their name
     function yourName(username)
     {
@@ -28,13 +27,14 @@ var myName;
         while (username === "")
         {
             username = prompt("Dont leave this blank!\n\nPlease enter your name:");
+
             if (nameInput = "")
                 {
-                alert("Thank you!");
-                break;
+                    alert("Thank you!");
+                    break;
                 }
         }
-        return username;
+             return username;
     }
 //calling/invoking the above function:
         myName = yourName(myName);
@@ -42,8 +42,8 @@ var myName;
 
 
 
-
 /* ASKING THE USER IF THEY WANT POWERBALL OR LOTTERY NUMBERS */
+
 var powerLotto;
 powerLotto = prompt ("Welcome! Would you like to see your lottery numbers or pwerball number?\n\n Please enter either lottery OR powerball...");
 
@@ -63,14 +63,18 @@ function askLotto (validlotto) //function to ask if lotto numbers are wanted
     return validlotto;
 }
 powerLotto = askLotto(powerLotto);
-alert("Thank for entering you choice as " + powerLotto);
+alert("Thank for entering you choice as \n\n " + powerLotto + ".");
+/* add a confirm dialog here to have the script run the users choice by the function */
 
 
 
-
+/////////
+///////
+///////       FLIP FLOP THE LOTTO WITH THE POWERBALL TOMORROW:
+//////////////
 
 /*LOTTERY  running math.random()*/
-//LOTTO NUMBERS
+
 function myLotto(min, max, num)
 {
     var myNumbers = [];
@@ -98,13 +102,6 @@ console.log("Your sixth random lottery number is " + randomNums1 +".");
 
 
 
-
-
-
-
-
-
-
 /* USING MATH.RANDOM() FOR POWERBALL NUMBERS */
 //POWERBALL NUMBER
 var myPowerball;
@@ -112,42 +109,70 @@ myPowerball = prompt("Well to your number one website to get all of your random 
     " 5 random numbers plus the final random POWERBALL will be generated for you. \n\n" +
     "Would you like to test your luck in Powerball today? \n\n Please enter yes or no and click OK to continue.");
 
-        if(myPowerball === yes)
-{
-    function powerball(min, max, num)
-    {
-        var powerballNumbers;
-        powerballNumbers = Math.random() * (max - min) + min;
-        powerballNumbers = Math.round(powerballNumbers);
+    if (myPowerball === yes)
         {
-            {
-                for (var a = 0; a < num; a++) {
-                    powerballNumbers[a] = Math.random() * (max - min) + min;
-                    powerballNumbers[a] = Math.round(powerballNumbers[a]);
-                }
-                return powerballNumbers;
-            }
+            function powerball(min, max, num)
+                {
+                    var powerballNumbers;
+                        powerballNumbers = Math.random() * (max - min) + min;
+                        powerballNumbers = Math.round(powerballNumbers);
+                    {
+                         {
+                             for (var a = 0; a < num; a++)
+                                {
+                                    powerballNumbers[a] = Math.random() * (max - min) + min;
+                                     powerballNumbers[a] = Math.round(powerballNumbers[a]);
+                                 }
+                             return powerballNumbers;
+                         }
+                      }
+                 }
+                var randomNums;
+                        randomNums = powerball(1, 59, 6);
+                         console.log("Your first  number is " + randomNums + ".");
+                        randomNums = powerball(1, 59, 5);
+                        console.log("Your second number is " + randomNums + ".");
+                        randomNums = powerball(1, 59, 4);
+                        console.log("Your third number is " + randomNums + ".");
+                         randomNums = powerball(1, 59, 3);
+                        console.log("Your fourth number is " + randomNums + ".");
+                        randomNums = powerball(1, 59, 2);
+                         console.log("Your fifth number is " + randomNums + ".");
+                        randomNums = powerball(1, 35, 1);
+                        console.log("YOUR LUCKY POWERBALL NUMBER IS " + randomNums + "!");
         }
-    }
-    var randomNums;
-    randomNums = powerball(1, 59, 6);
-    console.log("Your first  number is " + randomNums + ".");
-    randomNums = powerball(1, 59, 5);
-    console.log("Your second number is " + randomNums + ".");
-    randomNums = powerball(1, 59, 4);
-    console.log("Your third number is " + randomNums + ".");
-    randomNums = powerball(1, 59, 3);
-    console.log("Your fourth number is " + randomNums + ".");
-    randomNums = powerball(1, 59, 2);
-    console.log("Your fifth number is " + randomNums + ".");
-    randomNums = powerball(1, 35, 1);
-    console.log("YOUR LUCKY POWERBALL NUMBER IS " + randomNums + "!");
-}
-else if (myPowerball === "")
-        {
-            alert("I'm sorry but this is currently not an option for you!");
 
-        }
+        else if (myPowerball === "")
+            {
+                alert("I'm sorry but this is currently not an option for you!");
+            }
+
+
+
+/* CONFIRMING THAT THE SCRIPT GAVE THE USER WHAT THEY ASKED FOR */
+
+var letsConfirm2;                                                                                                                                                       //declaring a variable
+letsConfirm2 = prompt( " Now lets confirm that requested" + "," + "\n" + powerLotto + "\n"
+    + " and that you received all of the numbers? Please enter yes or no and click OK....");                 // confirming the users initial input for their random nums preference
+
+if (faveColour === yes)                                                                                                                                          //   equals a yes from the user then do this
+{
+    alert("So your fave colour is:" + "" + faveColour + "?" + "I hope so bc I love that colour!");
+}
+else                                                                                                                                                                              // otherwise do this
+{
+    alert("I think there was an error. Lets try this again");
+}
+/*  SAYING THANK YOU AND INITIATING A GOODBYE */
+var theEnd;                                                                                                                                                                 //declaring a variable
+        theEnd = alert("Thank you for participating today, \n" + yourName + ". " + goodBye + "! ");        //assigning a popup alert to say thank you and goodbye to the user
+
+
+
+
+//////////////////////////////////////////////////
+// NOTES BELOW HERE ONLY
+////////////////////////////////////////////////
 /* original
  //POWERBALL NUMBERS
  var mega;
@@ -189,36 +214,8 @@ else if (myPowerball === "")
  randomNums = powerball(1, 35,1)
  console.log("Your Powerball number is " + randomNums +".");
  */
+//Florida lottery has six random numbers between 1 and 53;
+// the Powerball lottery has five random numbers between 1 and 59 and a Powerball
+ //between 1 and 35.*/
 
 
-
-
-
-
-
-
-
-/*Florida lottery has six random numbers between 1 and 53;
- the Powerball lottery has five random numbers between 1 and 59 and a Powerball
- between 1 and 35.*/
-
-
-
-var letsConfirm2;                                  //declaring a variable
-letsConfirm2 = prompt( " Now lets confirm that" + "," + "\n"
-    + faveColour + "\n"
-    + "is your fave colour? yes/no and click ok.");// confirming the users fave colour
-if (faveColour === yes)                            //if fave colour equals a yes from the user then do this
-{
-    alert("So your fave colour is:" + "" + faveColour + "?" + "I hope so bc I love that colour!");
-}
-else                                            // otherwise do this
-{
-    alert("I think there was an error. Lets try this again");
-}
-
-
-/*  initiating a goodbye */
-var theEnd;                                       //declaring a variable
-theEnd = alert("Thank you for participating today"
-    + "," + "" + yourName + "" + goodBye + "."); //assigning a popup alert to say thank you and goodbye to the user
