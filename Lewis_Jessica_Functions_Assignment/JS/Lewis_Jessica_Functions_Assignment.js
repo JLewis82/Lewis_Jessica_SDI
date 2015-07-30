@@ -40,6 +40,9 @@ var myName;
         myName = yourName(myName);
         alert(welCome + myName);
 
+
+
+
 /* ASKING THE USER IF THEY WANT POWERBALL OR LOTTERY NUMBERS */
 var powerLotto;
 powerLotto = prompt ("Welcome! Would you like to see your lottery numbers or pwerball number?\n\n Please enter either lottery OR powerball...");
@@ -64,8 +67,9 @@ alert("Thank for entering you choice as " + powerLotto);
 
 
 
-/*running math.random()*/
 
+
+/*LOTTERY  running math.random()*/
 //LOTTO NUMBERS
 function myLotto(min, max, num)
 {
@@ -82,22 +86,76 @@ function myLotto(min, max, num)
     }
 }
 //lottery random number results
-var randomNums;
-    randomNums = myLotto(1,10,1);
-console.log("Your first random lottery number is " + randomNums +".");
-console.log("Your second random lottery number is " + randomNums +".");
-console.log("Your third random lottery number is " + randomNums +".");
-console.log("Your fourth random lottery number is " + randomNums +".");
-console.log("Your fifth random lottery number is " + randomNums +".");
-console.log("Your sixth random lottery number is " + randomNums +".");
+var randomNums1;
+    randomNums1 = myLotto(1,53,1);
+console.log("Your first random lottery number is " + randomNums1 +".");
+console.log("Your second random lottery number is " + randomNums1 +".");
+console.log("Your third random lottery number is " + randomNums1 +".");
+console.log("Your fourth random lottery number is " + randomNums1 +".");
+console.log("Your fifth random lottery number is " + randomNums1 +".");
+console.log("Your sixth random lottery number is " + randomNums1 +".");
+
+
+
+
+
+
+
 
 
 
 
 /* USING MATH.RANDOM() FOR POWERBALL NUMBERS */
-//POWERBALL NUMBERS
+//POWERBALL NUMBER
+
+function powerball(min, max, num)
+    {
+        var powerballNumbers = [];
+        {
+             {
+                for (var a = 0;  a < num; a++)
+
+                    {
+                        powerballNumbers[a] = Math.random() * (max - min) + min;
+                        powerballNumbers[a] = Math.round(powerballNumbers[a]);
+                     }
+
+                 return powerballNumbers;
+            }
+        }
+    }
+        var randomNums;
+                randomNums = powerball(1,59, 6);
+                console.log("Your first random lottery number is " + randomNums + ".");
+
+                randomNums = powerball(1,59, 6);
+                console.log("Your second random lottery number is " + randomNums + ".");
+
+                randomNums = powerball(1,59, 6);
+                console.log("Your third random lottery number is " + randomNums + ".");
+
+                randomNums = powerball(1,59, 6);
+                console.log("Your fourth random lottery number is " + randomNums + ".");
+
+                randomNums = powerball(1,59, 6);
+                console.log("Your fifth random lottery number is " + randomNums + ".");
+
+                randomNums = powerball(1,35, 6);
+                console.log("Your lucky POWERBALL   number is " + randomNums + "!");
 
 
+
+
+
+
+
+
+
+
+
+/*Florida lottery has six random numbers between 1 and 53;
+ the Powerball lottery has five random numbers between 1 and 59 and a Powerball
+ between 1 and 35.*/
 
 
 
