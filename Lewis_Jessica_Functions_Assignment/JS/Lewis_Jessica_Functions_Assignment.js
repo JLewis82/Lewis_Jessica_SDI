@@ -45,14 +45,14 @@ var myName;
 var powerLotto;
 powerLotto = prompt ("Welcome! Would you like to see your lottery numbers or pwerball number?\n\n Please enter either lottery OR powerball...");
 
-
-
 function askLotto (validlotto) //function to ask if lotto numbers are wanted
 {
     var question = "";
     while (validlotto === "lottery")
     {
          validlotto = alert("Lottery numbers it is then! Please press ok to continue....:");
+        do
+
 
         if (question === "powerball")
         {
@@ -64,14 +64,6 @@ function askLotto (validlotto) //function to ask if lotto numbers are wanted
 }
 powerLotto = askLotto(powerLotto);
 alert("Thank for entering you choice as \n\n " + powerLotto + ".");
-
-
-///////       FLIP FLOP THE LOTTO WITH THE POWERBALL TOMORROW:
-//////////////
-
-
-/* add a confirm dialog here to have the script run the users choice by the function */
-
 
 
 
@@ -122,28 +114,57 @@ console.log("Your first random lottery number is " + randomNums1 +"." + "\n\n" +
 
 
 /* USING MATH.RANDOM() FOR POWERBALL NUMBERS */
-//POWERBALL NUMBER
 var myPowerball;
+myPowerball = prompt("Welcome to your number one website to get all of your random Powerball numbers! \n\n" +
+    " 5 random numbers plus the final random POWERBALL will be generated for you. \n\n" +
+    "Would you like to test your luck in Powerball today? \n\n Please enter yes or no and click OK to continue.");
+
+
+while(myPowerball == yes)
+{
+    function powerball(min, max, num)
+    {
+        var powerballNumbers;
+        powerballNumbers = Math.random() * (max - min) + min;
+        powerballNumbers = Math.round(powerballNumbers);
+        {
+            {
+                for (var a = 0; a < num; a++)
+                {
+                    powerballNumbers[a] = Math.random() * (max - min) + min;
+                    powerballNumbers[a] = Math.round(powerballNumbers[a]);
+                }
+                return powerballNumbers;
+            }
+        }
+    }
+    var randomNums1st;
+    randomNums1st = powerball1(1, 59, 1);
+    var randomNums6power;
+    randomNums6power = powerball1(1, 35, 1);
+}
+
+alert("Your 5 random lucky numbers are " + randomNums1st + randomNums1st +
+    randomNums1st + randomNums1st + randomNums1st + "." +
+    " Additionally your POWERBALL random number is" + ": " + randomNums6power);
+
+/////////////////////////////
+
+
+
+//POWERBALL NUMBER
+/*var myPowerball;
       myPowerball = prompt("Welcome to your number one website to get all of your random Powerball numbers! \n\n" +
                                             " 5 random numbers plus the final random POWERBALL will be generated for you. \n\n" +
                                             "Would you like to test your luck in Powerball today? \n\n Please enter yes or no and click OK to continue.");
 
-
-
-
-            if (myPowerball === "")
-            {
-
-
-
-/*while(myPowerball === yes)
-{*/
+while(myPowerball === "")
+{
     function powerball1(min, max, num) {
         var powerballNumbers = [];
         {
             {
-                for (var b = 0; b < num; b++)
-                {
+                for (var b = 0; b < num; b++) {
                     powerballNumbers[b] = Math.random() * (max - min) + min;
                     powerballNumbers[b] = Math.round(powerballNumbers[b]);
                 }
@@ -152,21 +173,25 @@ var myPowerball;
         }
 
     }
-    var  randomNums1st;
+
+    var randomNums1st;
     randomNums1st = powerball1(1, 59, 1);
     var randomNums6power;
     randomNums6power = powerball1(1, 35, 1);
-
-        console.log("Your 5 random lucky numbers are " + "\n\n" + randomNums1st + "\n\n" + randomNums1st + "\n\n" +
-        randomNums1st+ "\n\n" + randomNums1st+ "\n\n" + randomNums1st+ "." +  " Additionally your POWERBALL random number is" + ": "+ randomNums6power + ".");
-console.log("Your 5 random lucky numbers are " + "\n\n" + randomNums1st + "\n\n" + randomNums1st + "\n\n" +
-    randomNums1st+ "\n\n" + randomNums1st+ "\n\n" + randomNums1st+ "." +  " Additionally your POWERBALL random number is" + ": "+ randomNums6power + ".");
-
-/*else if (myPowerball === "")
-{
-    alert("I'm sorry but this is currently not an option for you!");
 }
-*/
+    console.log("Your 5 random lucky numbers are " + "\n\n" + randomNums1st + "\n\n" + randomNums1st + "\n\n" +
+        randomNums1st + "\n\n" + randomNums1st + "\n\n" + randomNums1st + "." +
+        " Additionally your POWERBALL random number is" + ": " + randomNums6power + ".");
+
+    //console.log("Your 5 random lucky numbers are " + "\n\n" + randomNums1st + "\n\n" + randomNums1st + "\n\n" +
+       // randomNums1st + "\n\n" + randomNums1st + "\n\n" + randomNums1st + "." + " Additionally your POWERBALL
+        r andom number is" + ": " + randomNums6power + ".");*/
+
+//else if (myPowerball === "")
+//{
+    //alert("I'm sorry but this is currently not an option for you!");
+//}
+
 
 
 /* CONFIRMING THAT THE SCRIPT GAVE THE USER WHAT THEY ASKED FOR */
@@ -175,67 +200,19 @@ var letsConfirm2;                                                               
 letsConfirm2 = prompt( " Now lets confirm that requested" + "," + "\n" + powerLotto + "\n"
     + " and that you received all of the numbers? Please enter yes or no and click OK....");                 // confirming the users initial input for their random nums preference
 
-if (faveColour === yes)                                                                                                                                          //   equals a yes from the user then do this
+if (letsConfirm2 === yes)                                                                                                                                          //   equals a yes from the user then do this
 {
-    alert("So your fave colour is:" + "" + faveColour + "?" + "I hope so bc I love that colour!");
+    console.log("Thank your!");
 }
-else                                                                                                                                                                              // otherwise do this
+else  if (letsConfirm2 === "")                                                                                                                                                                            // otherwise do this
 {
-    alert("I think there was an error. Lets try this again");
+    alert("please contact your system admin");
 }
 /*  SAYING THANK YOU AND INITIATING A GOODBYE */
 var theEnd;                                                                                                                                                                 //declaring a variable
-        theEnd = alert("Thank you for participating today, \n" + yourName + ". " + goodBye + "! ");        //assigning a popup alert to say thank you and goodbye to the user
+        theEnd = ("Thank you for participating today, \n" + yourName + "! ");        //assigning a popup alert to say thank you and goodbye to the user
+alert(theEnd);
 
 
-
-
-//////////////////////////////////////////////////
-// NOTES BELOW HERE ONLY
-////////////////////////////////////////////////
-/* original
- //POWERBALL NUMBERS
- var mega;
- mega = 1;
-
- function powerball(min, max, num)
- {
- var powerballNumbers = [];
- {
- {
- for (var i = 0; i < num; i++)
- {
- powerballNumbers[i] = Math.random() * (max - min) + min;
- powerballNumbers[i] = Math.round(powerballNumbers[i]);
- break;
- }
- return powerballNumbers;
-
- }
- }
- }
- //lottery random number results
- var randomNums;
- randomNums = powerball(1,59, 6);
- console.log("Your first random lottery number is " + randomNums +".");
-
- randomNums = powerball(1,59,5);
- console.log("Your second number is " + randomNums +".");
-
- randomNums = powerball(1,59,4);
- console.log("Your third number is " + randomNums +".");
-
- randomNums = powerball(1,59,3);
- console.log("Your fourth number is " + randomNums +".");
-
- randomNums = powerball(1, 59,2)
- console.log("Your fifth number is " + randomNums +".");
-
- randomNums = powerball(1, 35,1)
- console.log("Your Powerball number is " + randomNums +".");
- */
-//Florida lottery has six random numbers between 1 and 53;
-// the Powerball lottery has five random numbers between 1 and 59 and a Powerball
- //between 1 and 35.*/
 
 
