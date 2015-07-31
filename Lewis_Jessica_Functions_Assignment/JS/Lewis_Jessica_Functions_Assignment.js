@@ -1,5 +1,7 @@
 /**
  * Created by Miss_Jessica_Lynne on 7/28/15.
+ * SDI
+ * Functions Assignment
  */
 
 /*BASIC VARIABLES USED THROUGHOUT THIS SCRIPT*/
