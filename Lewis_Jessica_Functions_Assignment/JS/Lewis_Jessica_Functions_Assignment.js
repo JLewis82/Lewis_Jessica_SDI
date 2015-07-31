@@ -16,12 +16,11 @@ var welCome;
                                 "the best random lottery and Powerball \n\n " +
                                 "generated numbers on the web!");
 
-
 /* USING A FUNCTION ASKING THE USER TO INPUT THEIR NAME*/
-
 var myName;
     myName = prompt("Let's begin! Please enter your name so I may better assist you:");
-//assigning the function to request that the user input their name
+
+/*assigning the function to request that the user input their name*/
     function yourName(username)
     {
         var nameInput = "";
@@ -37,16 +36,16 @@ var myName;
         }
              return username;
     }
-//calling/invoking the above function:
+      /*calling/invoking the above function:*/
         myName = yourName(myName);
         alert(welCome + myName);
 
 
-
 /* ASKING THE USER IF THEY WANT POWERBALL OR LOTTERY NUMBERS */
-
 var powerLotto;
 powerLotto = prompt ("Welcome! Would you like to see your lottery numbers or pwerball number?\n\n Please enter either lottery OR powerball...");
+
+
 
 function askLotto (validlotto) //function to ask if lotto numbers are wanted
 {
@@ -65,10 +64,19 @@ function askLotto (validlotto) //function to ask if lotto numbers are wanted
 }
 powerLotto = askLotto(powerLotto);
 alert("Thank for entering you choice as \n\n " + powerLotto + ".");
-/* add a confirm dialog here to have the script run the users choice by the function */
+
 
 ///////       FLIP FLOP THE LOTTO WITH THE POWERBALL TOMORROW:
 //////////////
+
+
+/* add a confirm dialog here to have the script run the users choice by the function */
+
+
+
+
+
+
 
 /*LOTTERY  running math.random()*/
 
@@ -89,12 +97,26 @@ function myLotto(min, max, num)
 //lottery random number results
 var randomNums1;
       randomNums1 = myLotto(1,53,1);
-     console.log("Your first random lottery number is " + randomNums1 +".");
-     console.log("Your second random lottery number is " + randomNums1 +".");
-     console.log("Your third random lottery number is " + randomNums1 +".");
-     console.log("Your fourth random lottery number is " + randomNums1 +".");
-     console.log("Your fifth random lottery number is " + randomNums1 +".");
-     console.log("Your sixth random lottery number is " + randomNums1 +".");
+var randomNums2;
+randomNums2 = myLotto(1, 59, 1);
+// console.log("Your second number is " + randomNums + ".");
+ var randomNums3;
+randomNums3 = myLotto(1, 59, 1);
+//console.log("Your third number is " + randomNums + ".");
+var randomNums4;
+randomNums4 = myLotto(1, 59, 1);
+//console.log("Your fourth number is " + randomNums + ".");
+var randomNums5;
+ randomNums5 = myLotto(1, 59, 1);
+//console.log("Your fifth number is " + randomNums + ".");
+var randomNums6;
+randomNums6 = myLotto(1, 59,1) ;
+console.log("Your first random lottery number is " + randomNums1 +"." + "\n\n" + " Your second random lottery number is " +
+         randomNums2 +"." + "\n\n" + "Your third random lottery number is " + randomNums3 +"." + "\n\n" + "Your fourth random lottery number is " + randomNums4 +"." +
+         "\n\n" + "Your fifth random lottery number is " + randomNums5 +"." + "\n\n" + "And Your sixth random lottery number is " + randomNums6 +".");
+
+
+
 
 
 
@@ -106,49 +128,45 @@ var myPowerball;
                                             " 5 random numbers plus the final random POWERBALL will be generated for you. \n\n" +
                                             "Would you like to test your luck in Powerball today? \n\n Please enter yes or no and click OK to continue.");
 
-    if (myPowerball === yes)
+
+
+
+            if (myPowerball === "")
+            {
+
+
+
+/*while(myPowerball === yes)
+{*/
+    function powerball1(min, max, num) {
+        var powerballNumbers = [];
         {
-            function powerball(min, max, num)
+            {
+                for (var b = 0; b < num; b++)
                 {
-                    var powerballNumbers;
-                        powerballNumbers = Math.random() * (max - min) + min;
-                        powerballNumbers = Math.round(powerballNumbers);
-                    {
-                         {
-                             for (var a = 0; a < num; a++)
-                                {
-                                    powerballNumbers[a] = Math.random() * (max - min) + min;
-                                     powerballNumbers[a] = Math.round(powerballNumbers[a]);
-                                 }
-                             return powerballNumbers;
-                         }
-                      }
-                 }
-                var randomNums;
-                        randomNums = powerball(1, 59, 6);
-                         console.log("Your first  number is " + randomNums + ".");
-
-                        randomNums = powerball(1, 59, 5);
-                        console.log("Your second number is " + randomNums + ".");
-
-                        randomNums = powerball(1, 59, 4);
-                        console.log("Your third number is " + randomNums + ".");
-
-                         randomNums = powerball(1, 59, 3);
-                        console.log("Your fourth number is " + randomNums + ".");
-
-                        randomNums = powerball(1, 59, 2);
-                         console.log("Your fifth number is " + randomNums + ".");
-
-                        randomNums = powerball(1, 35, 1);
-                        console.log("YOUR LUCKY POWERBALL NUMBER IS " + randomNums + "!");
+                    powerballNumbers[b] = Math.random() * (max - min) + min;
+                    powerballNumbers[b] = Math.round(powerballNumbers[b]);
+                }
+                return powerballNumbers;
+            }
         }
 
-        else if (myPowerball === "")
-            {
-                alert("I'm sorry but this is currently not an option for you!");
-            }
+    }
+    var  randomNums1st;
+    randomNums1st = powerball1(1, 59, 1);
+    var randomNums6power;
+    randomNums6power = powerball1(1, 35, 1);
 
+        console.log("Your 5 random lucky numbers are " + "\n\n" + randomNums1st + "\n\n" + randomNums1st + "\n\n" +
+        randomNums1st+ "\n\n" + randomNums1st+ "\n\n" + randomNums1st+ "." +  " Additionally your POWERBALL random number is" + ": "+ randomNums6power + ".");
+console.log("Your 5 random lucky numbers are " + "\n\n" + randomNums1st + "\n\n" + randomNums1st + "\n\n" +
+    randomNums1st+ "\n\n" + randomNums1st+ "\n\n" + randomNums1st+ "." +  " Additionally your POWERBALL random number is" + ": "+ randomNums6power + ".");
+
+/*else if (myPowerball === "")
+{
+    alert("I'm sorry but this is currently not an option for you!");
+}
+*/
 
 
 /* CONFIRMING THAT THE SCRIPT GAVE THE USER WHAT THEY ASKED FOR */
