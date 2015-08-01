@@ -92,16 +92,12 @@ var randomNums1;
       randomNums1 = myLotto(1,53,1);
 var randomNums2;
 randomNums2 = myLotto(1, 59, 1);
-// console.log("Your second number is " + randomNums + ".");
  var randomNums3;
 randomNums3 = myLotto(1, 59, 1);
-//console.log("Your third number is " + randomNums + ".");
 var randomNums4;
 randomNums4 = myLotto(1, 59, 1);
-//console.log("Your fourth number is " + randomNums + ".");
 var randomNums5;
  randomNums5 = myLotto(1, 59, 1);
-//console.log("Your fifth number is " + randomNums + ".");
 var randomNums6;
 randomNums6 = myLotto(1, 59,1) ;
 console.log("Your first random lottery number is " + randomNums1 +"." + "\n\n" + " Your second random lottery number is " +
