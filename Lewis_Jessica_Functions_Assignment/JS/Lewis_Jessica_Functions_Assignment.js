@@ -53,12 +53,11 @@ function askLotto (validlotto) //function to ask if lotto numbers are wanted
     while (validlotto === "lottery")
     {
          validlotto = alert("Lottery numbers it is then! Please press ok to continue....:");
-        do
 
 
         if (question === "powerball")
         {
-            question = alert("Powerball numbers it is! Please press ok to continue");
+            alert("Powerball numbers it is! Please press ok to continue");
             break;
         }
     }
